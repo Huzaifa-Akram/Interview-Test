@@ -1,0 +1,101 @@
+.main {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.card {
+  width: 100%;
+  max-width: 600px;
+  padding: 48px;
+  border: 1px solid #ececec;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.04);
+}
+
+.title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #111;
+}
+
+.subtitle {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #8a8a8a;
+}
+
+.form {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.row {
+  display: flex;
+  gap: 16px;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 12px 14px;
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #111;
+}
+
+.input {
+  height: 46px;
+}
+
+.textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: #9a9a9a;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: #001f86;
+}
+
+.submit {
+  height: 48px;
+  margin-top: 4px;
+  background: #001f86;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.submit:hover {
+  background: #00187a;
+}
+
+@media (max-width: 560px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .card {
+    padding: 28px;
+  }
+}

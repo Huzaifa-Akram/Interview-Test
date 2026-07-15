@@ -1,0 +1,162 @@
+.footer {
+  background: #ad0000;
+  color: #fff;
+  padding: 60px 20px 30px;
+}
+
+.top {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.circle {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactIcon {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.contactTitle {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.contactText {
+  margin-top: 4px;
+  font-size: 16px;
+}
+
+.divider {
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.middle {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.about {
+  flex: 1;
+  min-width: 260px;
+  max-width: 460px;
+}
+
+.linksGroup {
+  display: flex;
+  gap: 60px;
+  padding: 0 50px;
+  margin-right: 12%;
+  border-left: 1px solid rgba(255, 255, 255, 0.35);
+  border-right: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.aboutText {
+  max-width: 420px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.socials {
+  margin-top: 28px;
+  display: flex;
+  gap: 14px;
+}
+
+.social {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.social:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+.socialIcon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 160px;
+}
+
+.colTitle {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.links a {
+  font-size: 16px;
+  opacity: 0.95;
+  transition: opacity 0.15s ease;
+}
+
+.links a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.copyright {
+  padding-top: 24px;
+  text-align: center;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .top {
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .middle {
+    flex-direction: column;
+  }
+
+  .linksGroup {
+    margin-right: 0;
+    padding: 0;
+    border: none;
+    gap: 40px;
+  }
+}

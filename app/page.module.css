@@ -1,5 +1,36 @@
-.main {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
+.hero {
+  position: relative;
+  padding: 60px 20px;
+  background-image: url("/home-hero-bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.card {
+  position: relative;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.93);
+  border-radius: 20px;
+}
+
+.title {
+  margin-bottom: 32px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 24px;
+  }
 }
