@@ -1,7 +1,12 @@
+"use client";
+import { useState } from "react";
 import Link from "next/link";
 import styles from "./Header.module.css";
+import SellEquipmentModal from "./SellEquipmentModal";
 
-export default function Header({ active }) {
+export default function Header({ active, categories = [], manufacturers = [] }) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <header className={styles.header}>
       <div className={styles.inner}>
@@ -15,10 +20,21 @@ export default function Header({ active }) {
             Contact us
           </Link>
         </nav>
-        <button className={styles.cta} type="button">
+        <button 
+          className={styles.cta} 
+          type="button" 
+          onClick={() => setIsModalOpen(true)}
+        >
           Sell Your Equipment
         </button>
       </div>
+
+      <SellEquipmentModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        categories={categories}
+        manufacturers={manufacturers}
+      />
     </header>
   );
 }

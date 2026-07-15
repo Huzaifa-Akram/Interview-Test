@@ -3,23 +3,12 @@
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: 18px;
   max-height: 480px;
-  overflow-y: auto;
-  padding-right: 8px;
+  overflow: hidden;
 }
 
-.grid::-webkit-scrollbar {
-  width: 6px;
-}
-.grid::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 4px;
-}
-.grid::-webkit-scrollbar-thumb {
-  background: #ad0000;
-  border-radius: 4px;
-}
-.grid::-webkit-scrollbar-thumb:hover {
-  background: #8a0000;
+.gridExpanded {
+  max-height: none;
+  overflow: visible;
 }
 
 .item {
@@ -57,4 +46,25 @@
   text-align: center;
   padding: 40px;
   color: #555;
+}
+
+.showAllContainer {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.showAllButton {
+  background: none;
+  border: none;
+  color: #ad0000;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: opacity 0.15s ease;
+}
+
+.showAllButton:hover {
+  opacity: 0.8;
+  text-decoration: underline;
 }

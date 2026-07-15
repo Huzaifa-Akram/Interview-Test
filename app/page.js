@@ -19,7 +19,7 @@ export default async function Home({ searchParams }) {
 
   return (
     <>
-      <Header active="home" />
+      <Header active="home" categories={categories} manufacturers={manufacturers} />
       <section className={styles.hero}>
         <div className={styles.overlay} />
         <div className={styles.card}>
